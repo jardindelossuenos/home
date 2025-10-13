@@ -11,6 +11,14 @@
             background-color: #111; 
         }
         
+        #title {
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+            margin: 20px 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
         #video-section {
             height: 100vh; 
             width: 100%;
@@ -48,6 +56,22 @@
 </head>
 <body>
 
+    <section id="image-section" style="height: 50vh;">
+        <img src="./logo.jpeg" alt="Logo" id="centered-image">
+    </section>
+
+    
+    <section id="video-section">
+        <video controls autoplay muted loop playsinline id="bg-video">
+            <source src="./video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    
+    <section id="image-section">
+        <img src="./description.jpeg" alt="description" id="centered-image">
+    </section>
     
     <section id="video-section">
         <video controls autoplay muted loop playsinline id="bg-video">
@@ -57,9 +81,8 @@
     </section>
 
     <section id="image-section">
-        <img src="./image.jpeg" alt="A random placeholder image" id="centered-image">
+        <img src="./image.jpeg" alt="info evento" id="centered-image">
     </section>
-
 
 </body>
 </html>
