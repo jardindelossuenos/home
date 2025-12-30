@@ -32,12 +32,12 @@ const LocalVideoSection = ({
           <div className="flex-1 w-full">
             <Card className="overflow-hidden shadow-xl">
               <div className="aspect-video w-full">
-                <iframe
-                  className="w-full h-full"
+                <video
+                  className="w-full h-full object-cover"
                   src={videoUrl}
                   title={title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                  controls
+                  preload="metadata"
                 />
               </div>
             </Card>
