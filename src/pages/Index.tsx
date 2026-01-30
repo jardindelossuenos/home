@@ -20,6 +20,7 @@ import {
   Palette,
   Smile,
   Gift,
+  Clock,
 } from "lucide-react";
 import logo from "@/assets/logo.png";
 // import heroBg from "@/assets/logo.png";
@@ -71,6 +72,43 @@ const Index = () => {
             <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto text-balance">
               ESPACIO DE EDUCACIÓN CONSCIENTE EN LA NATURALEZA EN YECLA
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Qué es el Jardín de los Sueños */}
+      <section className="py-16 md:py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-balance">
+              ¿Qué es el Jardín de los Sueños?
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+              Es un centro de educación consciente en la naturaleza.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-6 pt-4">
+              <Card className="p-6 text-center space-y-2 border-primary/20 hover:border-primary/40 transition-colors">
+                <Clock className="w-8 h-8 mx-auto text-primary" />
+                <h3 className="font-semibold">Horario</h3>
+                <p className="text-sm text-muted-foreground">
+                  Lunes a viernes
+                  <br />
+                  8:30 - 14:00
+                </p>
+              </Card>
+              <Card className="p-6 text-center space-y-2 border-secondary/20 hover:border-secondary/40 transition-colors">
+                <Users className="w-8 h-8 mx-auto text-secondary" />
+                <h3 className="font-semibold">Edad</h3>
+                <p className="text-sm text-muted-foreground">De 2 a 6 años</p>
+              </Card>
+              <Card className="p-6 text-center space-y-2 border-accent/20 hover:border-accent/40 transition-colors">
+                <MapPin className="w-8 h-8 mx-auto text-accent" />
+                <h3 className="font-semibold">Lugar</h3>
+                <p className="text-sm text-muted-foreground">
+                  Yecla (Murcia) Carretera de Montealegre 1 km
+                </p>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
